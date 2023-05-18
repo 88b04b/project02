@@ -1,0 +1,159 @@
+body {
+    color: #555;
+}
+
+.header {
+    border-bottom: 1px solid #ccc;
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.header .gnb {
+    display: flex;
+}
+
+.header .gnb li {
+    transition: color 0.4s;
+}
+
+.header .gnb li:hover {
+    color: #7c83d0;
+}
+
+.header .gnb .menu {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header .gnb .menu li {
+    position: relative;
+}
+
+.header .gnb .menu li~li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+}
+
+.header .gnb .btn {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+.main_visual {
+    background: #c7caeb url(../images/main_bg.png) no-repeat center bottom/contain;
+}
+
+.main_visual .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px 0;
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.main_visual .inner figure {
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.main_visual .inner p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: #5f527a;
+}
+
+.section1 .inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.section1 h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section1 p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.img_wrap {
+    display: flex;
+    gap: 0 30px;
+}
+
+.section1 figure {
+    overflow: hidden;
+}
+
+.section1 img {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.section1 img:hover {
+    transform: scale(1.15);
+}
+
+.footer {
+    background: #f9f9f9;
+    color: #777;
+}
+
+.footer .inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.footer .service {
+    display: flex;
+    justify-content: center;
+    gap: 0 40px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer .service li {
+    position: relative;
+}
+
+.footer .service li~li::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: #ccc;
+}
+
+.footer address {
+    text-align: center;
+}
